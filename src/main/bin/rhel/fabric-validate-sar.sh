@@ -23,11 +23,11 @@ $FABRIC_HOME/bin/posh << EOF
 echo Indexing ...
 nim:index sar:1 .
 echo Loading ...
-poshx:sfs 9085 sar .
+poshx:sfs 9985 sar .
 nim:policy -R osgi.resolved.bundle/slf4j.api osgi.active.bundle/com.paremus.util.logman
 log-config -c
 log-config -l info
-nim repos -l http://localhost:9085/sar/sar.xml
+nim repos -l http://localhost:9985/sar/sar.xml
 repos
 log-config -l debug
 echo Validating ...
